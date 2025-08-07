@@ -15,6 +15,9 @@ namespace DraftAnalyzer
             var drafts = FetchDrafts(userName);
 
             AnalyzeDrafts(drafts);
+
+            Console.WriteLine("\nPressione qualquer tecla para sair...");
+            Console.ReadKey();
         }
 
         static void AnalyzeDrafts(List<List<DraftPick>> draftResults)
